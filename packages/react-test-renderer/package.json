@@ -1,27 +1,39 @@
 {
   "name": "react-test-renderer",
-  "version": "16.0.0-alpha",
+  "version": "17.0.2",
   "description": "React package for snapshot testing.",
   "main": "index.js",
-  "repository": "facebook/react",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/react.git",
+    "directory": "packages/react-test-renderer"
+  },
   "keywords": [
     "react",
     "react-native",
     "react-testing"
   ],
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/facebook/react/issues"
   },
-  "homepage": "https://facebook.github.io/react/",
+  "homepage": "https://reactjs.org/",
+  "dependencies": {
+    "object-assign": "^4.1.1",
+    "react-is": "^17.0.2",
+    "react-shallow-renderer": "^16.13.1",
+    "scheduler": "^0.20.1"
+  },
   "peerDependencies": {
-    "react": "^16.0.0-alpha"
+    "react": "17.0.2"
   },
   "files": [
     "LICENSE",
-    "PATENTS",
     "README.md",
+    "build-info.json",
     "index.js",
-    "lib/"
+    "shallow.js",
+    "cjs/",
+    "umd/"
   ]
 }
